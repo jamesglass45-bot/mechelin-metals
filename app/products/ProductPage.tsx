@@ -12,7 +12,7 @@ import ProductCard from './ProductCard';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import type { Product } from '@/lib/types';
-import MaterialsSection from '@/components/homepage-components/MaterialSection';
+// import MaterialsSection from '@/components/homepage-components/MaterialSection';
 
 interface ProductPageProps {
   products: Product[];
@@ -214,7 +214,7 @@ export default function ProductPage({ products }: ProductPageProps) {
       </section>
 
         {/* ── PRODUCTS PREVIEW ─────────────────────────────── */}
-         <MaterialsSection />
+         {/* <MaterialsSection /> */}
 
       {/* CTA */}
       {/* <CTASection
