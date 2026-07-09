@@ -139,10 +139,17 @@ export default function ContactPage(): React.JSX.Element {
   ]
 
   const QUICK_CONTACTS = [
-    { icon: Mail, label: t("quickContacts.0.label"), val: t("quickContacts.0.val"), href: 'mailto:mechelinmetalsnig@gmail.com' },
+    { icon: Mail, label: t("quickContacts.0.label"), val: t("quickContacts.0.val"), href: 'mailto:info@mechelinmetals.com' },
     { icon: MessageSquare, label: t("quickContacts.1.label"), val: t("quickContacts.1.val"), href: 'https://wa.me/2348000000000' },
     { icon: MapPin, label: t("quickContacts.2.label"), val: t("quickContacts.2.val"), href: '#locations' },
     { icon: MapPin, label: t("quickContacts.3.label"), val: t("quickContacts.3.val"), href: '#locations' },
+  ]
+
+  const sidebarHours = t.raw("sidebar.hours") as { day: string; time: string }[]
+  const sidebarLinks = [
+    { href: '/products', label: t("sidebar.links.0") },
+    { href: '/services', label: t("sidebar.links.1") },
+    { href: '/about', label: t("sidebar.links.2") },
   ]
 
   const [form, setForm] = useState({
@@ -579,6 +586,11 @@ export default function ContactPage(): React.JSX.Element {
                           <>{t("form.buttons.submit")} <Send size={14} /></>
                         )}
                       </button>
+                      {submitError ? (
+                        <p className="mt-3 text-sm text-red-600" style={{ color: 'var(--clr-red)' }}>
+                          {submitError}
+                        </p>
+                      ) : null}
                     </div>
                   </motion.form>
                 )}
@@ -646,7 +658,7 @@ export default function ContactPage(): React.JSX.Element {
                     {t("sidebar.businessHours")}
                   </h3>
                   <div className="flex flex-col gap-0">
-                    {(t.raw("sidebar.hours") as any[]).map(({ day, time }: any, i: number) => (
+                    {sidebarHours.map(({ day, time }, i) => (
                       <div
                         key={day}
                         className="flex justify-between items-center py-3 text-xs"
@@ -683,11 +695,7 @@ export default function ContactPage(): React.JSX.Element {
                     {t("sidebar.explore")}
                   </h3>
                   <div className="flex flex-col">
-                    {[
-                      { href: '/products', label: t("sidebar.links.0") },
-                      { href: '/services', label: t("sidebar.links.1") },
-                      { href: '/about', label: t("sidebar.links.2") },
-                    ].map(({ href, label }: any, i: number) => (
+                    {sidebarLinks.map(({ href, label }, i) => (
                       <Link
                         key={href}
                         href={href}
