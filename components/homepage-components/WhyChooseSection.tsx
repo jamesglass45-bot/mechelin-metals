@@ -41,7 +41,7 @@ export default function WhyChooseSection(): React.JSX.Element {
         desc: t("logisticsDesc"),
       },
       {
-        icon: "🛡️",
+        icon: "💳",
         title: t("paymentTitle"),
         desc: t("paymentDesc"),
       },
