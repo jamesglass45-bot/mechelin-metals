@@ -225,7 +225,9 @@ export const getFormDataFromProduct = (product: Product): ProductFormData => ({
   categorySlug: product.category.slug,
   categoryName: product.category.name,
   badge: product.badge ?? "",
-  badgeOption: product.badge ? (BADGE_OPTIONS.includes(product.badge as String) ? product.badge : "Custom") : "",
+  badgeOption: product.badge
+    ? (BADGE_OPTIONS.includes(product.badge as typeof BADGE_OPTIONS[number]) ? product.badge : "Custom")
+    : "",
   moqValue: product.moq.value,
   moqUnit: product.moq.unit,
   specs: {
