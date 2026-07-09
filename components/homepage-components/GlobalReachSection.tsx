@@ -18,6 +18,13 @@ export default function GlobalReachSection(): React.JSX.Element {
       coordinates: { x: 510, y: 250 },
       desc: t("nigeriaDesc")
     },
+{
+      code: "IN",
+      name: t("india"),
+      flagUrl: "https://flagcdn.com/w160/in.png",
+      coordinates: { x: 660, y: 160 },
+      desc: t("indiaDesc")
+    },
     {
       code: "CN",
       name: t("china"),
@@ -32,13 +39,7 @@ export default function GlobalReachSection(): React.JSX.Element {
       coordinates: { x: 790, y: 110 },
       desc: t("southKoreaDesc")
     },
-    {
-      code: "IN",
-      name: t("india"),
-      flagUrl: "https://flagcdn.com/w160/in.png",
-      coordinates: { x: 660, y: 160 },
-      desc: t("indiaDesc")
-    }
+    
   ], [t]);
 
   return (
