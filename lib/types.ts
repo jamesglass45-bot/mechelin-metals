@@ -107,66 +107,63 @@ export interface AnalyticsData {
 }
 
 export const BADGE_OPTIONS = [
-  "Premium Active",
-  "Eco-Certified",
-  "Top Seller",
-  "Industrial Grade",
-  "Fast Dispatch",
-  "Custom",
+  "Recyclable Scrap",
+  "Premium Export Grade",
+  "High Purity Export Grade",
+  "Industrial Recycling Grade",
+  "Premium Alloy Grade",
+  "Heavy Cast Export Grade",
 ] as const;
 
 export const GRADE_OPTIONS = [
-  "Standard",
-  "Premium",
-  "Industrial",
-  "Pharmaceutical",
-  "Recycled",
-  "Custom",
+  "Mixed Aluminum Scrap Grade",
+  "UBC Export Grade",
+  "Offset Lithographic Aluminium Scrap",
+  "Mixed Hermetic Compressor Scrap",
+  "Cast Aluminium Alloy Wheel Scrap",
+  "Heavy Cast Aluminium Scrap",
 ] as const;
 
 export const FORM_OPTIONS = [
-  "Powder",
-  "Granules",
-  "Ingot",
-  "Pellets",
-  "Sheet",
-  "Custom",
+  "Compressed Bundle",
+  "Compressed Baled Scrap",
+  "Flat Stacked Sheets",
+  "Complete Sealed Compressors",
+  "Complete Cast Wheel Rims",
+  "Mixed Heavy Cast Components",
 ] as const;
 
 export const PURITY_OPTIONS = [
-  "99.99%",
-  "99.9%",
-  "99.5%",
-  "98%",
-  "95%",
-  "Custom",
+  "92–98% Aluminum (Typical)",
+  "95–99% Aluminium Recovery",
+  "98–99.5% Aluminium",
+  "Mixed Ferrous & Non-Ferrous Metal Composition",
+  "95–98% Aluminium Alloy",
+  "92–98% Aluminium Alloy",
 ] as const;
 
 export const ZINC_CONTENT_OPTIONS = [
-  "95%",
-  "96%",
-  "97%",
-  "98%",
-  "99%",
-  "Custom",
+  "<0.5%",
+  "<0.05%",
+  "<0.03%",
+  "N/A (Copper Recovery: 8–18%)",
+  "0.5–3.5% (Depending on Alloy Grade)",
+  "0.5–4.0% (Varies by Alloy Composition)",
 ] as const;
 
 export const SOURCE_OPTIONS = [
-  "Electrolytic",
-  "Hydrogen Reduction",
-  "Primary Smelter",
-  "Recycled",
-  "Imported",
-  "Custom",
+  "Post-Consumer & Industrial Recycling",
+  "Post-Consumer Beverage Can Recycling",
+  "Commercial Printing & Packaging Industry",
+  "Refrigerators, Freezers & Air Conditioning Systems",
+  "Motorcycles, Scooters & Three-Wheel Vehicles",
+  "Automotive Engines, Industrial Machinery & Engineering Equipment",
 ] as const;
 
 export const HAZARD_OPTIONS = [
-  "GHS Class 4",
-  "GHS Class 8",
-  "GHS Class 9",
-  "ADR Class 4",
-  "ADR Class 8",
-  "Custom",
+  "Non-Hazardous Recyclable Metal Scrap (ADR/GHS)",
+  "Non-Hazardous Recyclable Metal Scrap",
+  "Non-Hazardous Recyclable Industrial Scrap (Refrigerants Removed Prior to Export)",
 ] as const;
 
 
@@ -228,7 +225,7 @@ export const getFormDataFromProduct = (product: Product): ProductFormData => ({
   categorySlug: product.category.slug,
   categoryName: product.category.name,
   badge: product.badge ?? "",
-  badgeOption: product.badge ? (BADGE_OPTIONS.includes(product.badge as any) ? product.badge : "Custom") : "",
+  badgeOption: product.badge ? (BADGE_OPTIONS.includes(product.badge as String) ? product.badge : "Custom") : "",
   moqValue: product.moq.value,
   moqUnit: product.moq.unit,
   specs: {

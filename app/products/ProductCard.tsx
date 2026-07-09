@@ -1,7 +1,6 @@
 import React from "react";
 import { ArrowRight, Package } from "lucide-react";
 import { Product } from "@/lib/types";
-import { useRouter } from "next/navigation";
 import Link from "next/link";
 
 interface ProductCardProps {
@@ -19,7 +18,6 @@ export default function ProductCard({ product, onNavigate }: ProductCardProps) {
   };
 
   const primaryImage = resolveImageSrc(product.images?.[0]);
-  const router = useRouter();
 
   return (
     <div
