@@ -74,7 +74,7 @@ export default function Footer() {
               {[
                 { icon: MapPin, text: 'No. 23 Nathan Okafor St, Awada Obosi, Anambra, Nigeria' },
                 { icon: MapPin, text: 'No. 32 Louis Mbanefo St, Woliwo Layout, Anambra, Nigeria' },
-                { icon: Mail, text: 'mechelinmetalsnig@gmail.com' },
+                { icon: Mail, text: 'info@mechelinmetals.com' },
                 { icon: Phone, text: 'WhatsApp preferred' },
               ].map(({ icon: Icon, text }) => (
                 <div key={text} className="flex gap-2.5 items-start text-sm" style={{ color: 'var(--tx-muted)' }}>
