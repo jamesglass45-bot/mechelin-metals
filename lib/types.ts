@@ -43,7 +43,6 @@ export const CATEGORIES: ProductCategory[] = [
   { name: "Brass", slug: "brass" },
   { name: "Lead", slug: "lead" },
   { name: "Battery", slug: "battery" },
-  { name: "Zinc", slug: "zinc" },
 ];
 
 export interface DashboardMetric {
@@ -111,6 +110,7 @@ export const BADGE_OPTIONS = [
   "Premium Export Grade",
   "High Purity Export Grade",
   "Industrial Recycling Grade",
+  "Architectural Export Grade",
   "Premium Alloy Grade",
   "Heavy Cast Export Grade",
 ] as const;
@@ -122,6 +122,7 @@ export const GRADE_OPTIONS = [
   "Mixed Hermetic Compressor Scrap",
   "Cast Aluminium Alloy Wheel Scrap",
   "Heavy Cast Aluminium Scrap",
+  "Extruded Aluminium Profile Scrap"
 ] as const;
 
 export const FORM_OPTIONS = [
@@ -131,15 +132,17 @@ export const FORM_OPTIONS = [
   "Complete Sealed Compressors",
   "Complete Cast Wheel Rims",
   "Mixed Heavy Cast Components",
+  "Mixed Aluminium Extrusion Profiles"
 ] as const;
 
 export const PURITY_OPTIONS = [
-  "92–98% Aluminum (Typical)",
+  "92–98% Aluminium (Typical)",
   "95–99% Aluminium Recovery",
   "98–99.5% Aluminium",
   "Mixed Ferrous & Non-Ferrous Metal Composition",
   "95–98% Aluminium Alloy",
   "92–98% Aluminium Alloy",
+  "95–99% Aluminium Alloy",
 ] as const;
 
 export const ZINC_CONTENT_OPTIONS = [
@@ -149,6 +152,7 @@ export const ZINC_CONTENT_OPTIONS = [
   "N/A (Copper Recovery: 8–18%)",
   "0.5–3.5% (Depending on Alloy Grade)",
   "0.5–4.0% (Varies by Alloy Composition)",
+  "<1.0% (Varies by Alloy Grade)"
 ] as const;
 
 export const SOURCE_OPTIONS = [
@@ -158,12 +162,14 @@ export const SOURCE_OPTIONS = [
   "Refrigerators, Freezers & Air Conditioning Systems",
   "Motorcycles, Scooters & Three-Wheel Vehicles",
   "Automotive Engines, Industrial Machinery & Engineering Equipment",
+  "Construction, Demolition & Industrial Fabrication",
 ] as const;
 
 export const HAZARD_OPTIONS = [
   "Non-Hazardous Recyclable Metal Scrap (ADR/GHS)",
   "Non-Hazardous Recyclable Metal Scrap",
   "Non-Hazardous Recyclable Industrial Scrap (Refrigerants Removed Prior to Export)",
+  
 ] as const;
 
 

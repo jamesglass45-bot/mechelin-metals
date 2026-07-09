@@ -141,9 +141,7 @@ Mechelin Metals Nigeria Ltd. supplies export-quality Aluminium Printing Sheets S
             "/products/printing-sheet/printing-sheet-1.jpg",
             "/products/printing-sheet/printing-sheet-2.jpg",
             "/products/printing-sheet/printing-sheet-3.jpg",
-            "https://images.unsplash.com/photo-1565793298595-6a879b1d9492",
-            "https://images.unsplash.com/photo-1517048676732-d65bc937f952",
-            "https://images.unsplash.com/photo-1581092921461-eab62e97a780",
+
         ],
     },
     {
@@ -232,11 +230,6 @@ This premium-grade aluminium scrap is highly demanded by aluminium smelters, die
         ],
         images: [
             "/products/rim/rim-motorcycle-1.jpeg",
-
-            // Optional Industrial Gallery
-            "https://images.unsplash.com/photo-1511919884226-fd3cad34687c",
-            "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3",
-            "https://images.unsplash.com/photo-1503376780353-7e6692767b70",
         ],
     },
     {
@@ -278,11 +271,80 @@ Our heavy cast aluminium scrap provides an excellent raw material for aluminium 
         ],
         images: [
             "/products/thick-cast/thick-cast.jpeg",
-            "https://images.unsplash.com/photo-1581092160607-ee22621dd758",
-            "https://images.unsplash.com/photo-1517048676732-d65bc937f952",
-            "https://images.unsplash.com/photo-1565793298595-6a879b1d9492",
         ],
     },
+
+
+    {
+        title: "Extrusion Profile Scrap (Aluminium Profile Scrap)",
+        slug: "aluminium-profile-extrusion-scrap",
+        description: `Aluminium Profile Scrap (Extrusion Profiles) consists of discarded architectural and industrial aluminium extrusions recovered from window frames, door frames, curtain walls, office partitions, structural sections, furniture components, and fabrication offcuts. Manufactured from high-grade aluminium alloys, these profiles provide excellent metal recovery and are widely utilized in secondary aluminium production.
+
+At Mechelin Metals Nigeria Ltd., our aluminium profile scrap is sourced from construction demolition projects, manufacturing facilities, fabrication workshops, and industrial recycling operations. Materials are carefully sorted to minimize contamination before being prepared for export according to international recycling and scrap trading standards.
+
+This export-grade aluminium profile scrap is highly valued by aluminium smelters, extrusion manufacturers, alloy producers, and foundries due to its consistent alloy quality, excellent melting characteristics, and high recovery rate. Bulk quantities are available for international buyers seeking reliable long-term supply.`,
+        category: {
+            name: "Aluminum",
+            slug: "aluminum",
+        },
+        badge: "Architectural Export Grade",
+        specs: {
+            grade: "Extruded Aluminium Profile Scrap",
+            form: "Mixed Aluminium Extrusion Profiles",
+            purity: "95–99% Aluminium Alloy",
+            source: "Construction, Demolition & Industrial Fabrication",
+            hazardCompliance: "Non-Hazardous Recyclable Metal Scrap",
+            zincContent: "<1.0% (Varies by Alloy Grade)",
+        },
+        moq: {
+            value: 50,
+            unit: "tonne",
+        },
+        applications: [
+            "Secondary aluminium ingot production",
+            "Aluminium extrusion manufacturing",
+            "Architectural aluminium recycling",
+            "Aluminium billet production",
+            "Industrial alloy manufacturing",
+            "Window and door frame production",
+            "Construction aluminium products",
+            "Foundry operations",
+            "Circular economy recycling",
+            "Export-grade aluminium feedstock",
+        ],
+        images: [
+            "/products/profile/profile-1.jpeg",
+
+            // Optional Industrial Gallery
+            "https://images.unsplash.com/photo-1517048676732-d65bc937f952",
+            "https://images.unsplash.com/photo-1581092160607-ee22621dd758",
+            "https://images.unsplash.com/photo-1565793298595-6a879b1d9492",
+        ],
+
+        seo: {
+            metaTitle:
+                "Aluminium Profile Scrap (Extrusion Profiles) | Mechelin Metals Nigeria Ltd.",
+            metaDescription:
+                "Premium Aluminium Profile Scrap for export. High-quality aluminium extrusion profiles recovered from architectural and industrial applications, ideal for secondary smelting, extrusion manufacturing, foundries, and industrial recycling worldwide.",
+            keywords: [
+                "Aluminium Profile Scrap",
+                "Aluminium Extrusion Scrap",
+                "Window Frame Scrap",
+                "Door Frame Aluminium",
+                "Extruded Aluminium",
+                "Architectural Aluminium",
+                "Aluminium Alloy Scrap",
+                "Secondary Aluminium",
+                "Metal Recycling",
+                "Construction Aluminium",
+                "Industrial Aluminium",
+                "Export Aluminium Scrap",
+            ],
+        },
+
+
+    },
+
 ];
 
 export default products;
