@@ -133,7 +133,7 @@ export default function ProductPage({ products }: ProductPageProps) {
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
 
             {/* Sidebar */}
-            <div className="space-y-4">
+            <div className="hidden space-y-4">
 
               {/* Search */}
               <div className="p-4 border rounded-xl bg-white">
